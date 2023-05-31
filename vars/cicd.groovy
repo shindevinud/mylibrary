@@ -14,6 +14,5 @@ def newDeploy(workspace,ip,context)
 
 def newTesting(repo)
 {
-    git "${repo}"
     sh "java -jar /var/lib/jenkins/workspace/DeclarativePipeline1/testing.jar"
 }
